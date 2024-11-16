@@ -1,0 +1,146 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+@keyframes fadeOutLeft {
+  0% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInRight 1s linear forwards;
+}
+
+.fade-out {
+  animation: fadeOutLeft 1s linear forwards;
+}
+
+/* Marquee Effect Css Start */
+
+.marquee {
+}
+
+.marquee-content {
+  display: flex;
+  gap: 10px;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+
+/* Marquee Effect Css End */
+
+/* Primary Btn */
+.primary-btn{
+  box-sizing: border-box;
+  /* background-image: linear-gradient(to right, #ffffff00 50%, #fe4880 50%); */
+  background-image: radial-gradient( #d4d4d4 -10%, #D9D9D9 100%);
+  background-size: 200%;
+  /* background-position: 0%; */
+  transition: 0.5s;
+  position: relative;
+  border-radius: 5px;
+  
+}
+.primary-btn:hover{
+  color: #ffffff;
+  /* background-position: 100%; */
+  background-image: radial-gradient(#35f13bd6 0%, #2ce732 100%);
+
+}
+
+.primary-btn:before, .primary-btn:after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  transition: all 0.4s, opacity 0.1s 0.4s;
+  opacity: 0;
+}
+.primary-btn:after{
+  bottom: 0;
+  right: 0;
+  border-right: 3px solid #212121;
+  border-bottom: 3px solid #212121;
+  border-radius: 4px;
+}
+.primary-btn:before{
+  left: 0;
+  top: 0;
+  border-left: 3px solid #212121;
+  border-top: 3px solid #212121;
+  border-radius: 4px;
+}
+
+.primary-btn:hover:before, .primary-btn:hover:after{
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
+  transition: 0.4s, opacity 0.1s;
+  opacity: 1;
+}
+
+/* Swiper JS */
+.mySwiper .swiper {
+  max-width: 512px;
+  width: 100%;
+  max-height: 428px;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ffffff00;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* reactplayer-wrapper */
+.reactplayer-mask{
+  background: url('/src/assets/images/video-mask2.png');
+  background-repeat: no-repeat;
+  background-size: Cover;
+}
+
+/* brand Slider */
+.myBrandSwiper .swiper{
+  max-width: 1560px;
+  width: 100%;
+  height: 100%;
+}
