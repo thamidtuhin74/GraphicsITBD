@@ -6,6 +6,8 @@ import ServiceSection from '../../Components/Home/ServiceSection/ServiceSection'
 import VideoSection from '../../Components/Home/VideoSection/VideoSection';
 import FAQSection from '../../Components/Home/FAQSection/FAQSection';
 import Ourbrands from '../../Components/Home/OurBrands/Ourbrands';
+import TestimonialSection from '../../Components/Home/TestimonialSection/TestimonialSection';
+import ContactForm from '../../Components/Home/GetInTouch/GetInTouch';
 
 const Home = () => {
     return (
@@ -17,6 +19,8 @@ const Home = () => {
             <VideoSection></VideoSection>
             <FAQSection></FAQSection>
             <Ourbrands></Ourbrands>
+            <TestimonialSection></TestimonialSection>
+            <ContactForm></ContactForm>
         </div>
     );
 };

@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
+import Marquee from 'react-fast-marquee';
 
 const Ourbrands = () => {
     return (
@@ -11,10 +12,10 @@ const Ourbrands = () => {
 
                 <div className="section-title mb-12 flex flex-col items-center">
                     <h2 className='text-[75px] font-inter font-semibold text-[#181818]'>Our Brands</h2>
-                    <p className='text-[18px] text-center w-[40%]'>We maintain the quality with the fastest turnaround time, which is 12 hours. That means you never have to worry about the deadlines</p>
+                    <p className='text-[18px] text-center w-[60%]'>We maintain the quality with the fastest turnaround time, which is 12 hours. That means you never have to worry about the deadlines</p>
                 </div>
                 <div className='myBrandSwiper'>
-                    <Swiper slidesPerView={6} spaceBetween={20} loop={true} 
+                    {/* <Swiper slidesPerView={6} spaceBetween={20} loop={true} 
                         autoplay={{
                             delay: 500,
                             disableOnInteraction: false
@@ -32,7 +33,23 @@ const Ourbrands = () => {
                         <SwiperSlide><img src="/src/assets/images/brands/4.png" alt="right1"/></SwiperSlide>
                         <SwiperSlide><img src="/src/assets/images/brands/5.png" alt="right1"/></SwiperSlide>
                         <SwiperSlide><img src="/src/assets/images/brands/6.png" alt="right1"/></SwiperSlide>
-                    </Swiper>
+                    </Swiper> */}
+                    <Marquee>
+                        <div className='flex flex-row justify-between gap-10'>
+                            <img src="/src/assets/images/brands/1.png" alt="Brand image"/>
+                            <img src="/src/assets/images/brands/2.png" alt="Brand image"/>
+                            <img src="/src/assets/images/brands/3.png" alt="Brand image"/>
+                            <img src="/src/assets/images/brands/4.png" alt="Brand image"/>
+                            <img src="/src/assets/images/brands/5.png" alt="Brand image"/>
+                            <img src="/src/assets/images/brands/6.png" alt="Brand image"/>
+                            <img src="/src/assets/images/brands/1.png" alt="Brand image"/>
+                            <img src="/src/assets/images/brands/2.png" alt="Brand image"/>
+                            <img src="/src/assets/images/brands/3.png" alt="Brand image"/>
+                            <img src="/src/assets/images/brands/4.png" alt="Brand image"/>
+                            <img src="/src/assets/images/brands/5.png" alt="Brand image"/>
+                            <img src="/src/assets/images/brands/6.png" alt="Brand image" className='mr-10'/>
+                        </div>
+                    </Marquee>
                 </div>
                 
 

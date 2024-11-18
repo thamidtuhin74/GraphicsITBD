@@ -105,6 +105,7 @@
   opacity: 1;
 }
 
+
 /* Swiper JS */
 .mySwiper .swiper {
   max-width: 512px;
@@ -126,8 +127,8 @@
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
   object-fit: cover;
 }
 
@@ -143,4 +144,30 @@
   max-width: 1560px;
   width: 100%;
   height: 100%;
+}
+
+/* input &n text area Outline */
+textarea, input {
+  outline: none;
+}
+
+.input-btn .primary-btn:before{
+  border-left: 3px solid #ffffff;
+  border-top: 3px solid #fff;
+  border-radius: 50px;
+}
+.input-btn .primary-btn:after{
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-radius: 50px;
+}
+
+
+/* get-in-touch-wrapper css */
+.get-in-touch-wrapper{
+  background-image: url("/src/assets/images/get-in-touch-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  background-position: center;
 }
